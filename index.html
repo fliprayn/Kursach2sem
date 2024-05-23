@@ -17,72 +17,72 @@
 <body>
     <header class="header">
         <div class="wrapper">
-            <div class="header_wrapper">
-                <div class="header_logo">
-                    <a href="/" class="header_logo-link">
-                        <img src="./img/svg/logo_svg.svg" alt="Shield"> Insurance
-                    </a>
-                </div>
-                                        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                        <label for="menu-toggle" class="menu-toggle-label">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        </label>
-                <nav class="header_nav">
-                    <ul class="header_list">
-                        <li class="header_item">
-                            <a href="/about_us.html" class="header_link">О компании</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="/services.html#insuranceContainer" class="header_link">Наши услуги</a>
-                        </li>
-                        <li class="header_item">
-                            <a a href="index.html#payments" class="header_link">Выплаты</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="/contacts.html" class="header_link">Контакты</a>
-                        </li>
-                        <li class="header_item">
-                            <button id="contactButton">
-                            <a href="#!" class="header_link">Обратная связь</a>
-                            </button>
-                            <div id="contactModal" class="modal">
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <h2>Оставить заявку</h2>
-                                    <form class="modal-form">
-                                        <label for="fullName">ФИО (полностью) *</label>
-                                        <input type="text" id="fullName" name="fullName" required>
-                                        <label for="contactDetails">E-mail *</label>
-                                        <input type="text" id="contactDetails" name="contactDetails" required>
-                                        <span class="error-message" id="contactDetailsError"></span>
-                                        <label for="city">Город *</label>
-                                        <input type="text" id="city" name="city" required>
-                                        <label for="insuranceType">Вид страхования *</label>
-                                        <select id="insuranceType" name="insuranceType" required>
-                                            <option value="">Выберите вид страхования</option>
-                                            <option value="Автострахование">Автострахование</option>
-                                            <option value="Медицинское страхование">Медицинское страхование</option>
-                                            <option value="Страхование имущества">Страхование имущества</option>
-                                            <option value="Страхование бизнеса">Страхование бизнеса</option>
-                                            <option value="Страхование грузоперевозок">Страхование грузоперевозок</option>
-                                        </select>
-                                        <label for="dateTime">Дата и время для связи *</label>
-                                        <input type="datetime-local" id="dateTime" name="dateTime" required>
-                                        <span class="error-message" id="dateTimeError"></span>
-                                        <label for="message">Сообщение</label>
-                                        <textarea id="message" name="message"></textarea>
-                                        <button type="submit">Отправить</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+          <div class="header_wrapper">
+            <div class="header_logo">
+              <a href="/" class="header_logo-link">
+                <img src="./img/svg/logo_svg.svg" alt="Shield"> Insurance
+              </a>
             </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-toggle-label">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <nav class="header_nav">
+              <ul class="header_list">
+                <li class="header_item">
+                  <a href="/about_us.html" class="header_link">О компании</a>
+                </li>
+                <li class="header_item">
+                  <a href="/services.html#insuranceContainer" class="header_link">Наши услуги</a>
+                </li>
+                <li class="header_item">
+                  <a a href="index.html#payments" class="header_link">Выплаты</a>
+                </li>
+                <li class="header_item">
+                  <a href="/contacts.html" class="header_link">Контакты</a>
+                </li>
+                <li class="header_item">
+                  <button id="contactButton">
+                    <a href="#!" class="header_link">Обратная связь</a>
+                  </button>
+                  <div id="contactModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h2>Оставить заявку</h2>
+                      <form class="modal-form">
+                        <label for="fullName">ФИО (полностью) *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <label for="contactDetails">E-mail *</label>
+                        <input type="text" id="contactDetails" name="contactDetails" required>
+                        <span class="error-message" id="contactDetailsError"></span>
+                        <label for="city">Город *</label>
+                        <input type="text" id="city" name="city" required>
+                        <label for="insuranceType">Вид страхования *</label>
+                        <select id="insuranceType" name="insuranceType" required>
+                          <option value="">Выберите вид страхования</option>
+                          <option value="Автострахование">Автострахование</option>
+                          <option value="Медицинское страхование">Медицинское страхование</option>
+                          <option value="Страхование имущества">Страхование имущества</option>
+                          <option value="Страхование бизнеса">Страхование бизнеса</option>
+                          <option value="Страхование грузоперевозок">Страхование грузоперевозок</option>
+                        </select>
+                        <label for="dateTime">Дата и время для связи *</label>
+                        <input type="datetime-local" id="dateTime" name="dateTime" required>
+                        <span class="error-message" id="dateTimeError"></span>
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message"></textarea>
+                        <button type="submit">Отправить</button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-    </header>
+      </header>
     <main>
     <script src="/modal.js"></script>
     <div class="slogon">

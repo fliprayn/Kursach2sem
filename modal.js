@@ -73,7 +73,6 @@ modalForm.addEventListener('submit', function (event) {
   }
 });
 
-
 // бургер меню
 const contactButton1 = document.getElementById('contactButton1');
 const contactModal1 = document.getElementById('contactModal1');
