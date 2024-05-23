@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance</title>
+    <link rel="stylesheet" href="./css/style_services.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/index.html" class="header_logo-link">
+                        <img src="./img/svg/logo_svg.svg" alt="Shield"> Insurance
+                    </a>
+                </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+                </label>
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li class="header_item">
+                    <a href="/about_us.html" class="header_link">О компании</a>
+                </li>
+                <li class="header_item">
+                    <a href="/services.html#insuranceContainer" class="header_link">Наши услуги</a>
+                </li>
+                <li class="header_item">
+                    <a a href="index.html#payments" class="header_link">Выплаты</a>
+                </li>
+                <li class="header_item">
+                    <a href="/contacts.html" class="header_link">Контакты</a>
+                </li>
+                <li class="header_item">
+                    <button id="contactButton">
+                    <a href="#!" class="header_link">Обратная связь</a>
+                    </button>
+                            <div id="contactModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h2>Оставить заявку</h2>
+                                    <form class="modal-form">
+                                        <label for="fullName">ФИО (полностью) *</label>
+                                        <input type="text" id="fullName" name="fullName" required>
+                                        <label for="contactDetails">E-mail *</label>
+                                        <input type="text" id="contactDetails" name="contactDetails" required>
+                                        <span class="error-message" id="contactDetailsError"></span>
+                                        <label for="city">Город *</label>
+                                        <input type="text" id="city" name="city" required>
+                                        <label for="insuranceType">Вид страхования *</label>
+                                        <select id="insuranceType" name="insuranceType" required>
+                                            <option value="">Выберите вид страхования</option>
+                                            <option value="Автострахование">Автострахование</option>
+                                            <option value="Медицинское страхование">Медицинское страхование</option>
+                                            <option value="Страхование имущества">Страхование имущества</option>
+                                            <option value="Страхование бизнеса">Страхование бизнеса</option>
+                                            <option value="Страхование грузоперевозок">Страхование грузоперевозок</option>
+                                        </select>          
+                                        <label for="dateTime">Дата и время для связи *</label>
+                                        <input type="datetime-local" id="dateTime" name="dateTime" required>
+                                        <span class="error-message" id="dateTimeError"></span>               
+                                        <label for="message">Сообщение</label>
+                                        <textarea id="message" name="message"></textarea>                       
+                                        <button type="submit">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script src="/modal.js"></script>
+    <div class="slogon">
+        <h1>Страховку купил - о тревогах забыл</h1> 
+    </div>
+    <div class="intro_wrapper">
+        <div class="intro_left">
+            <img src="/img/intro-left.png" alt="intro-left">
+        </div>
+        <div class="intro_right">
+            <img src="/img/intro-right.png" alt="intro-right">
+        </div>
+    </div>
+                <div class="wrapper">
+                <script src="/services.js"></script>
+                <div id="insuranceContainer" class="wrapper"><h1 class="our_services">НАШИ УСЛУГИ</h1></div>
+                
+                <h1 class="our_partners_text" >Наши партнеры</h1>
+                    <div class="our_partners-list">
+                            <img src="/img/svg/continental-insurance.svg" alt="Continental Insurance">
+                            <img src="/img/svg/safeco-insurance.svg" alt="Safeco Insurance">
+                            <img src="/img/svg/farmers-insurance-3.svg" alt="Farmers Insurance">
+                            <img src="/img/svg/keppel-insurance.svg" alt="Keppel Insurance">
+                    </div>
+                </div>
+                <footer>
+                        <div class="footer">       
+                                <div class="footer_left">
+                                    <a href="/" class="footer_logo-link">
+                                        <img src="./img/svg/footer_logo-svg.svg" alt="Shield"> Insurance
+                                    </a>
+                                </div>
+                                <div class="footer_right">
+                                    <a href="#!"><img src="/img/svg/facebook-logo.svg" alt="Facebook"></a>
+                                    <a href="#!"><img src="/img/svg/telegram.svg" alt="Telegram"></a>
+                                    <a href="#!"><img src="/img/svg/viber.svg" alt="Viber"></a>
+                                </div>
+                        </div>
+                        <div class="designer">Copyright &copy;2024; Designed by <span style="opacity: 0.7; letter-spacing: 1px; text-transform: uppercase;">Fliprayn</span></div>
+                </footer>    
+</body>
+</html>

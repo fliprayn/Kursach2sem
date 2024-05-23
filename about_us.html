@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance</title>
+    <link rel="stylesheet" href="./css/style_about_us.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/index.html" class="header_logo-link">
+                        <img src="./img/svg/logo_svg.svg" alt="Shield"> Insurance
+                    </a>
+                </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+                </label>
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li class="header_item">
+                    <a href="/about_us.html" class="header_link">О компании</a>
+                </li>
+                <li class="header_item">
+                    <a href="/services.html#insuranceContainer" class="header_link">Наши услуги</a>
+                </li>
+                <li class="header_item">
+                    <a a href="index.html#payments" class="header_link">Выплаты</a>
+                </li>
+                <li class="header_item">
+                    <a href="/contacts.html" class="header_link">Контакты</a>
+                </li>
+                <li class="header_item">
+                    <button id="contactButton">
+                    <a href="#!" class="header_link">Обратная связь</a>
+                    </button>
+                                <div id="contactModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h2>Оставить заявку</h2>
+                                    <form class="modal-form">
+                                        <label for="fullName">ФИО (полностью) *</label>
+                                        <input type="text" id="fullName" name="fullName" required>
+                                        <label for="contactDetails">E-mail *</label>
+                                        <input type="text" id="contactDetails" name="contactDetails" required>
+                                        <span class="error-message" id="contactDetailsError"></span>
+                                        <label for="city">Город *</label>
+                                        <input type="text" id="city" name="city" required>
+                                        <label for="insuranceType">Вид страхования *</label>
+                                        <select id="insuranceType" name="insuranceType" required>
+                                            <option value="">Выберите вид страхования</option>
+                                            <option value="Автострахование">Автострахование</option>
+                                            <option value="Медицинское страхование">Медицинское страхование</option>
+                                            <option value="Страхование имущества">Страхование имущества</option>
+                                            <option value="Страхование бизнеса">Страхование бизнеса</option>
+                                            <option value="Страхование грузоперевозок">Страхование грузоперевозок</option>
+                                        </select>
+                                        <label for="dateTime">Дата и время для связи *</label>
+                                        <input type="datetime-local" id="dateTime" name="dateTime" required>
+                                        <span class="error-message" id="dateTimeError"></span>
+                                        <label for="message">Сообщение</label>
+                                        <textarea id="message" name="message"></textarea>
+                                        <button type="submit">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script src="/modal.js"></script>
+    <main class="wrapper">
+    <h1 >О компании</h1>
+    <div>
+          <h2>Закрытое акционерное страховое общество «Insurance Company» зарегистрировано решением Государственного страхового надзора при Министерстве финансов Республики Беларусь от 16 августа 2000 г. № 1.</h2>
+          С момента создания компания существенно расширила сферу своей деятельности с отраслевого уровня до общенационального масштаба. Сегодня компания обеспечивает страховую защиту своим клиентам не только в любом регионе Беларуси, но и за ее пределами.
+     </div>
+     <div>В настоящее время региональная сеть компании насчитывает <span class="digits">10</span> филиалов (в том числе в областных центрах и районных городах) и около <span class="digits">250</span> точек продаж по всей Беларуси. Специалисты компании, а это — более <span class="digits">500</span> человек, работающие по всей республике, являются профессионалами и большими авторитетами на страховом рынке.
+        В распоряжении наших клиентов более <span class="digits">20</span> видов добровольного и обязательного страхования.
+        <p>Приоритетными направлениями бизнеса являются:</p>
+        <ul class="famous_insurance">
+            <li>страхование автомобилей</li>
+            <li>обязательное страхование гражданской ответственности водителей</li>
+            <li>страхование имущества юридических и физических лиц</li>
+            <li>личное страхование</li>
+            <li>страхование медицинских расходов</li>
+            <li>страхование разных видов ответственности</li>
+        </ul>
+    </div>
+    <div>
+        <p>Миссия «Insurance Company» состоит в обеспечении каждого человека полными, качественными, доступными и первоклассными услугами в сфере страхования, оправдывая ожидания клиентов и оставаясь устойчивым лидером на страховом рынке.</p>
+    </div>
+    <div>
+    <h2>Insurance Company — компания, которая:</h2>
+    <ul class="famous_insurance">
+        <li>предлагает полный пакет классических видов страхования имущества, здоровья и ответственности успешным людям, которые ценят свое время и думают о будущем</li>
+        <li> всегда рядом с клиентом и оперативно оказывает помощь в сложных ситуациях, стремится к высшему качеству во всем, что делает, придерживается норм деловой этики и имеет безупречную репутацию, обеспечивает устойчивый рост капитала акционеров, способствует развитию экономики республики и росту благосостояния граждан Беларуси.</li>
+    </ul>
+</div>
+    </main>
+                <footer>
+                        <div class="footer">
+                                <div class="footer_left">
+                                    <a href="/" class="footer_logo-link">
+                                        <img src="./img/svg/footer_logo-svg.svg" alt="Shield"> Insurance
+                                    </a>
+                                </div>
+                                <div class="footer_right">
+                                   <a href="#!"><img src="/img/svg/facebook-logo.svg" alt="Facebook"></a>
+                                   <a href="#!"><img src="/img/svg/telegram.svg" alt="Telegram"></a>
+                                   <a href="#!"><img src="/img/svg/viber.svg" alt="Viber"></a>
+                                </div>
+                        </div>
+                        <div class="designer">Copyright &copy;2024; Designed by <span style="opacity: 0.7; letter-spacing: 1px; text-transform: uppercase;">Fliprayn</span></div>
+                </footer>
+</body>
+</html>
